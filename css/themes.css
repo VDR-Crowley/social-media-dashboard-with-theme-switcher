@@ -18,12 +18,20 @@
 }
 
 .dark .area-logo p,
-.dark .area-mode {
+.dark .area-mode span{
   color: var(--Desaturated-Blue-Text);
 }
 .light .area-logo p,
-.dark .area-mode {
+.light .area-mode span {
   color: var(--Dark-Grayish-Blue-Text);
+}
+
+.light .area-mode .button-area {
+  background: var(--Toggle);
+}
+
+.light .area-mode .button-area:hover {
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
 .dark .area-mode .button-area .button {

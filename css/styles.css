@@ -90,6 +90,7 @@ a {
   grid-row: 1 / 2;
   justify-self: start;
   grid-area: top;
+  font-weight: 700;
 }
 
 .area-mode {
@@ -101,6 +102,7 @@ a {
 }
 
 .area-mode span {
+  font-weight: 700;
   margin: 4px 5px 0 0 
 }
 
@@ -116,7 +118,7 @@ a {
 
 .area-mode .button-area .button {
   width: 22px;
-  height: 22px;
+  height: 21px;
   margin-left: 2px;
   margin-right: 2px;
   border-radius: 60px;
