@@ -1,0 +1,295 @@
+:root {
+  
+/*Primary*/
+--Lime-Green: hsl(163, 72%, 41%);
+--Bright-Red: hsl(356, 69%, 56%);
+
+--Facebook: hsl(208, 92%, 53%);
+--Twitter: hsl(203, 89%, 53%);
+/* Instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%)*/
+--YouTube: hsl(348, 97%, 39%);
+
+/*Dark Theme*/
+
+/* Toggle linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%) */
+
+/*Light Theme*/
+
+--Toggle: hsl(230, 22%, 74%);
+--Toggle-dark: #282b4a;
+
+/* Dark Theme */
+--Very-Dark-Blue-BG: hsl(230, 17%, 14%);
+--Very-Dark-Blue-Top-BG-Pattern: hsl(232, 19%, 15%);
+--Dark-Desaturated-Blue-Card-BG: hsl(228, 28%, 20%);
+--Desaturated-Blue-Text: hsl(228, 34%, 66%);
+--White-Text: hsl(0, 0%, 100%);
+
+/* Light Theme */
+
+--White-BG: hsl(0, 0%, 100%);
+--Very-Pale-Blue-Top-BG-Pattern: hsl(225, 100%, 98%);
+--Light-Grayish-Blue-Card-BG: hsl(227, 47%, 96%);
+--Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
+--Very-Dark-Blue-Text: hsl(230, 17%, 14%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top:0;
+  border-radius: 0 0 20px 20px;
+  z-index: -1;
+}
+
+body {
+  font-size: 14px;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+}
+
+ul, li{
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-areas: "top top top top" "view view view view" "h2 h2 h2 h2" " view2 view2 view2 view2";
+  gap: 30px 0px;
+  padding-top: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid h2 {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  grid-area: h2;
+  justify-self: start;
+  padding-top: 1rem;
+}
+
+.area-logo {
+  grid-column: span 1;
+  grid-row: 1 / 2;
+  justify-self: start;
+  grid-area: top;
+}
+
+.area-mode {
+  display: flex;
+  flex-wrap: wrap;
+  grid-row: 1 / 2;
+  justify-self: end;
+  grid-area: top;
+}
+
+.area-mode span {
+  margin: 4px 5px 0 0 
+}
+
+.area-mode .button-area {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 25px;
+  border-radius: 30px;
+  background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  cursor: pointer;
+}
+
+.area-mode .button-area .button {
+  width: 22px;
+  height: 22px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 60px;
+}
+
+.view-one {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 20px;
+  grid-area: view;
+}
+
+.view-one {
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+}
+
+.view-two {
+  grid-area: view2;
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+}
+
+.view-two {
+  grid-area: view2;
+  display: grid;
+  grid-row: 4 / 5;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 20px;
+}
+
+.media-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  color: #555;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.view-one a.media-item.facebook-top::before, 
+.view-one a.media-item.twitter-top::before, 
+.view-one a.media-item.instagram-top::before, 
+.view-one a.media-item.youtube-top::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 0%;
+  border-radius: 10px 10px 0 0;
+}
+.view-one a.media-item.facebook-top::before {
+  background-color: var(--Facebook);
+}
+.view-one a.media-item.twitter-top::before {
+  background-color: var(--Twitter);
+}
+.view-one a.media-item.instagram-top::before {
+  background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+.view-one a.media-item.youtube-top::before {
+  background-color: var(--YouTube);
+}
+
+span.perfil-name {
+  position: relative;
+  font-size: 1em;
+}
+
+span.perfil-name::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 5px;
+  right: 5px;
+}
+span.perfil-name.facebook::before {
+  background: url(../images/icon-facebook.svg) no-repeat center center;
+}
+span.perfil-name.twitter::before {
+  background: url(../images/icon-twitter.svg) no-repeat center center;
+}
+span.perfil-name.instagram::before {
+  background: url(../images/icon-instagram.svg) no-repeat center center;
+}
+span.perfil-name.youtube::before {
+  background: url(../images/icon-youtube.svg) no-repeat center center;
+}
+
+.media-item h2 {
+  font-size: 4em;
+  margin-top: .8rem;
+}
+
+.media-item .sub {
+  letter-spacing: 6px;
+}
+
+.view-one .media-item small {
+  display: block;
+  margin-top: 2.2rem;
+  color: var(--Lime-Green);
+}
+
+.media-item.youtube-top small {
+  color: var(--Bright-Red);
+}
+
+.media-item small::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  position: relative;
+  left: -5px;
+  top: -1px;
+}
+
+.media-item.facebook-top small::before,
+.media-item.twitter-top small::before, 
+.media-item.instagram-top small::before {
+  background: url(../images/icon-up.svg) no-repeat center center;
+}
+
+.media-item.youtube-top small::before {
+  background: url(../images/icon-down.svg) no-repeat center center;
+}
+
+.view-two .media-item {
+  display: grid;
+  gap: 20px;
+  padding: 2rem 1rem;
+  grid-template-areas: "p img" "number info";
+}
+
+.view-two .media-item p {
+  grid-area: p;
+}
+
+.media-item img {
+  grid-area: img;
+  justify-self: end;
+}
+
+.view-two .media-item span {
+  font-size: 2em;
+  font-weight: 700;
+  grid-area: number;
+  align-self: end;
+}
+
+.view-two .media-item small {
+  display: block;
+  grid-area: info;
+  justify-self: end;
+  align-self: end;
+  color: var(--Lime-Green);
+}
+
+.view-two .media-item.facebook-top:nth-child(2) small::before {
+  background: url(../images/icon-down.svg) no-repeat center center;
+}
+
+.view-two .media-item.facebook-top:nth-child(2) small {
+  color: var(--Bright-Red);
+}
+
+.view-two .media-item.youtube-top small {
+  color: var(--Bright-Red);
+}
+

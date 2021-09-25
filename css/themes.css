@@ -1,0 +1,85 @@
+.dark body::before {
+  background: var(--Very-Dark-Blue-Top-BG-Pattern);
+}
+.dark body {
+  color: var(--White-Text);
+  background: var(--Very-Dark-Blue-BG);
+}
+.light body::before {
+  background: var(--Very-Pale-Blue-Top-BG-Pattern);
+}
+.light body {
+  color: var(--Very-Dark-Blue-Text);
+  background: var(--White-BG);
+}
+
+.light .grid h2 {
+  color: var(--Dark-Grayish-Blue-Text);
+}
+
+.dark .area-logo p,
+.dark .area-mode {
+  color: var(--Desaturated-Blue-Text);
+}
+.light .area-logo p,
+.dark .area-mode {
+  color: var(--Dark-Grayish-Blue-Text);
+}
+
+.dark .area-mode .button-area .button {
+  background-color: var(--Toggle-dark);
+}
+.light .area-mode .button-area .button {
+  background-color: var(--White-Text);
+}
+
+.dark .media-item {
+  background: var(--Dark-Desaturated-Blue-Card-BG);
+}
+.light .media-item {
+  background: var(--Light-Grayish-Blue-Card-BG);
+}
+
+.dark span.perfil-name {
+  color: var(--Desaturated-Blue-Text);
+}
+.light span.perfil-name {
+  color: var(--Very-Dark-Blue-Text);
+}
+
+.dark .media-item h2 {
+  color: var(--White-Text);
+}
+
+.light .media-item h2 {
+  color: var(--Very-Dark-Blue-Text);
+}
+
+.dark .media-item .sub {
+  color: var(--Desaturated-Blue-Text);
+}
+
+.light .media-item .sub {
+  color: var(--Dark-Grayish-Blue-Text);
+}
+
+.dark .view-two .media-item p {
+  color: var(--Desaturated-Blue-Text);
+}
+.light .view-two .media-item p {
+  color: var(--Dark-Grayish-Blue-Text);
+}
+
+.dark .view-two .media-item span {
+  color: var(--White-Text);
+}
+.light .view-two .media-item span {
+  color: var(--Very-Dark-Blue-Text);
+}
+
+.dark .media-item:hover {
+  filter: brightness(130%);
+}
+.light .media-item:hover {
+  filter: brightness(90%);
+}
