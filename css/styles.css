@@ -311,6 +311,11 @@ span.perfil-name.youtube::before {
     grid-area: h2;
     justify-self: start;
   }
+
+  .area-logo {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--Dark-Grayish-Blue-Text);
+  }
   
   .area-mode {
     grid-row: 2 / 3;
