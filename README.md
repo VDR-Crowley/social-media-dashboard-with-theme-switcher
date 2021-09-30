@@ -1,4 +1,3 @@
-# Frontend Mentor - Social media dashboard with theme switcher
 # Frontend Mentor - Painel de mídia social com alternador de tema
 
 Visualização do design para o painel de mídia social com desafio de codificação de alternador de tema
@@ -12,4 +11,4 @@ Os desafios do Frontend Mentor ajudam você a melhorar suas habilidades de codif
 
 Para fazer este desafio, você precisa de um conhecimento básico de HTML, CSS e um pouco de JavaScript.
 
-[Veja o desafio pronto:](https://xenodochial-darwin-93e53a.netlify.app/)
+[Veja o desafio pronto](https://xenodochial-darwin-93e53a.netlify.app/)
